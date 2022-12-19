@@ -3,18 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	var johnName *string = new(string)
-	*johnName = "John"
-	fmt.Println((*johnName))
+	const c = 3
+	fmt.Println(c + 3)
 
-	firstName := "Arthur"
-	fmt.Println((firstName))
+	//a bunch of code
 
-	//address of operator
-	ptr := &firstName
-	fmt.Println(ptr, *ptr)
+	fmt.Println(c + 1.2)
 
-	//asing anopther value to first name, pointer addres remains the same
-	firstName = "Tricia"
-	fmt.Println(ptr, *ptr)
+	//type const
+	const num int = 3
+
+	fmt.Println(float32(num) + 1.2)
 }

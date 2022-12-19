@@ -3,17 +3,19 @@ package main
 import "fmt"
 
 func main() {
+	var i int
+	i = 32
+	fmt.Println(i)
 
-	//regular
-	var arr [3]int
-	arr[0] = 1
-	arr[1] = 2
-	arr[2] = 3
-	fmt.Println(arr)
-	fmt.Println(arr[1])
+	var f float32 = 3.14
+	fmt.Println(f)
 
-	//implicit
-	otherArr := [3]int{4, 5, 6}
-	fmt.Println(otherArr)
-	fmt.Println(otherArr[1])
+	firstName := "Arthur"
+	fmt.Println(firstName)
+
+	b := true
+	fmt.Println(b)
+
+	c := complex(3, 4)
+	fmt.Println(c)
 }

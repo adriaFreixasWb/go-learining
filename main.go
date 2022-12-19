@@ -3,22 +3,18 @@ package main
 import "fmt"
 
 func main() {
-	var i int
-	i = 32
-	fmt.Println(i)
-
-	var f float32 = 3.14
-	fmt.Println(f)
+	var johnName *string = new(string)
+	*johnName = "John"
+	fmt.Println((*johnName))
 
 	firstName := "Arthur"
-	fmt.Println(firstName)
+	fmt.Println((firstName))
 
-	b := true
-	fmt.Println(b)
+	//address of operator
+	ptr := &firstName
+	fmt.Println(ptr, *ptr)
 
-	c := complex(3, 4)
-	fmt.Println(c)
-
-	r, im := real(c), imag(c)
-	fmt.Println(r, im)
+	//asing anopther value to first name, pointer addres remains the same
+	firstName = "Tricia"
+	fmt.Println(ptr, *ptr)
 }

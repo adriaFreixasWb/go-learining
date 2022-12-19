@@ -3,15 +3,17 @@ package main
 import "fmt"
 
 func main() {
-	const c = 3
-	fmt.Println(c + 3)
 
-	//a bunch of code
+	//regular
+	var arr [3]int
+	arr[0] = 1
+	arr[1] = 2
+	arr[2] = 3
+	fmt.Println(arr)
+	fmt.Println(arr[1])
 
-	fmt.Println(c + 1.2)
-
-	//type const
-	const num int = 3
-
-	fmt.Println(float32(num) + 1.2)
+	//implicit
+	otherArr := [3]int{4, 5, 6}
+	fmt.Println(otherArr)
+	fmt.Println(otherArr[1])
 }

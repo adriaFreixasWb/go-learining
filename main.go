@@ -1,10 +1,12 @@
 package main
 
 func main() {
-	wellKnownPorts := map[string]int{"http": 80, "https": 443}
-	for _, v := range wellKnownPorts {
-		println(v)
-	}
+	println("Starting web server")
+	//do important things
+
+	panic("Something bad just happened")
+
+	println("Web server started")
 	//controllers.RegisterControllers()
 	//http.ListenAndServe(":3000", nil)
 }

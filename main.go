@@ -1,22 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"my-module/models"
+)
 
 func main() {
-	type user struct {
-		ID        int
-		FirstName string
-		LastName  string
+	u := models.User{
+		ID:        2,
+		FirstName: "Tricia",
+		LastName:  "McMillan",
 	}
-	var u user
-	u.ID = 1
-	u.FirstName = "Arthur"
-	u.LastName = "Dent"
 	fmt.Println(u)
 
-	u2 := user{ID: 1,
-		FirstName: "Arthur",
-		LastName:  "Dent",
-	}
-	fmt.Println(u2)
 }

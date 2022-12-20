@@ -2,15 +2,16 @@ package main
 
 import (
 	"fmt"
-	"my-module/models"
 )
 
 func main() {
-	u := models.User{
-		ID:        2,
-		FirstName: "Tricia",
-		LastName:  "McMillan",
-	}
-	fmt.Println(u)
+	fmt.Println("main started")
+	port := 3000
+	startWebServer(port)
+}
 
+func startWebServer(port int) {
+	fmt.Println("Starting server...")
+	//do important things
+	fmt.Println("Server started on port", port)
 }

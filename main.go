@@ -5,6 +5,10 @@ func main() {
 	for i < 5 {
 		println(i)
 		i++
+		//exiting the loop early
+		if i == 3 {
+			break
+		}
 	}
 	//controllers.RegisterControllers()
 	//http.ListenAndServe(":3000", nil)

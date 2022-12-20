@@ -18,8 +18,8 @@ func main() {
 		LastName:  "Perfect",
 	}
 
-	if u1.ID == u2.ID {
-		println("Same user")
+	if u1.ID != u2.ID {
+		println("Not same user")
 	}
 
 }

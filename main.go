@@ -1,8 +1,9 @@
 package main
 
 func main() {
-	for i := 0; i < 5; i++ {
-		println(i)
+	slice := []int{1, 2, 3}
+	for i := 0; i < len(slice); i++ {
+		println(slice[i])
 	}
 	//controllers.RegisterControllers()
 	//http.ListenAndServe(":3000", nil)

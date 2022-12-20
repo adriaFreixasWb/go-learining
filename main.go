@@ -1,12 +1,25 @@
 package main
 
+type User struct {
+	ID        int
+	FirstName string
+	LastName  string
+}
+
 func main() {
-	println("Starting web server")
-	//do important things
+	u1 := User{
+		ID:        1,
+		FirstName: "Arthur",
+		LastName:  "Dent",
+	}
+	u2 := User{
+		ID:        2,
+		FirstName: "Ford",
+		LastName:  "Perfect",
+	}
 
-	panic("Something bad just happened")
+	if u1.ID == u2.ID {
+		println("Same user")
+	}
 
-	println("Web server started")
-	//controllers.RegisterControllers()
-	//http.ListenAndServe(":3000", nil)
 }

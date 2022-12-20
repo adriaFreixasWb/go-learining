@@ -7,8 +7,9 @@ func main() {
 		i++
 		//exiting the loop early
 		if i == 3 {
-			break
+			continue
 		}
+		println("continuing...")
 	}
 	//controllers.RegisterControllers()
 	//http.ListenAndServe(":3000", nil)

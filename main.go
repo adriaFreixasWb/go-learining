@@ -6,7 +6,7 @@ import (
 
 func main() {
 	port := 3000
-	p, err := startWebServer(port, 2)
+	_, err := startWebServer(port, 2)
 	fmt.Println(port, err)
 }
 
